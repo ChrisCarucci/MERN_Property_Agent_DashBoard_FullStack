@@ -2,7 +2,7 @@
 import AgentCard from "./agent/AgentCard";
 
 // home
-import TopAgent from "./TopAgent/TopAgent";
+import TopAgent from "./home/TopAgent";
 
 export { 
     AgentCard,
