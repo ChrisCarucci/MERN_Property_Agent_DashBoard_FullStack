@@ -19,7 +19,6 @@ const PieChart = ({ title, value, series, colors}: PieChartProps) => {
       borderRadius="15px"
       minHeight="110px"
       width="fit-content"
-
     >
       <Stack direction="column">
         <Typography fontSize={14}
@@ -40,7 +39,6 @@ const PieChart = ({ title, value, series, colors}: PieChartProps) => {
       series={series}
       type="donut"
       width="120px"
-
       />
 
     </Box>
