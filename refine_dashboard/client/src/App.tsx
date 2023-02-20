@@ -78,7 +78,6 @@ function App() {
               userId: data._id
             })
           );
-
         } else {
           return Promise.reject();
         }
@@ -99,7 +98,6 @@ function App() {
           return Promise.resolve();
         });
       }
-
       return Promise.resolve();
     },
     checkError: () => Promise.resolve(),
@@ -127,7 +125,7 @@ function App() {
       <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
       <RefineSnackbarProvider>
         <Refine
-          dataProvider={dataProvider("https://api.fake-rest.refine.dev")}
+          dataProvider={dataProvider("http://localhost:8080/api/v1")}
           notificationProvider={notificationProvider}
           ReadyPage={ReadyPage}
           catchAll={<ErrorComponent />}
