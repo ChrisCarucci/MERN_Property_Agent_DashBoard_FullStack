@@ -41,15 +41,15 @@ const AllProperties = () => {
           "field" in item ? item : [],
         );
 
-    return {
-      title:
-        logicalFilters.find((item) => item.field === "title")?.value ||
-        "",
-      propertyType:
-        logicalFilters.find((item) => item.field === "propertyType")
-        ?.value || "",
-    };
-  }, [filters]);
+      return {
+        title:
+          logicalFilters.find((item) => item.field === "title")?.value ||
+          "",
+        propertyType:
+          logicalFilters.find((item) => item.field === "propertyType")
+          ?.value || "",
+      };
+    }, [filters])
 
     if (isLoading) return <Typography>Loading...</Typography>;
     if (isError) return <Typography>Error...</Typography>;

@@ -4,8 +4,6 @@ import { Typography, Box, Stack, Card, CardMedia, CardContent } from '@pankod/re
 import { PropertyCardProps } from 'interfaces/property';
 
 
-
-
 const PropertyCard = ({ id, title, location, price, photo}: PropertyCardProps) => {
   return (
     <Card
